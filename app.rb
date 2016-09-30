@@ -1,6 +1,5 @@
 require 'json'
 require 'net/http'
-require 'pry-nav'
 
 class App
   def initialize(set_names, deck_file)
@@ -15,8 +14,6 @@ class App
     end
   end
 
-  private
-
   def generate_cmc_hash
     cmc_hash = {}
 
@@ -26,6 +23,8 @@ class App
 
     cmc_hash
   end
+
+  private
 
   def generate_card_array(deck_file)
     simple_card_array = DeckFileInterface.new.parse_deck_file(deck_file)
@@ -88,4 +87,4 @@ class SetLibrary
   end
 end
 
-App.new(ARGV[0], ARGV[1]).display_mana_curve
+#App.new(ARGV[0], ARGV[1]).display_mana_curve

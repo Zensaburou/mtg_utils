@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'pry'
-gem 'pry-nav'
+group :development, :test do
+  gem 'rspec'
+  gem 'pry'
+  gem 'pry-nav'
+end
