@@ -1,0 +1,8 @@
+decks/
+
+# Vim
+.swo
+.swp
+
+# RVM
+.ruby-*
