@@ -1,4 +1,4 @@
-require_relative '../app'
+require 'spec_helper'
 
 RSpec.describe :App do
   describe '.generate_cmc_hash' do
