@@ -14,4 +14,4 @@ The app requires two arguments:
 Example:
 
     A deck using cards from "Eldritch Moon" and "Shadows Over Innistrad" can be analyzed by running
-    `$ ruby app.rb EMN,SOI ./decks/example_deck.dec`
+    `$ ruby init_app.rb EMN,SOI ./decks/example_deck.dec`

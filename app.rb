@@ -46,7 +46,7 @@ class App
 
   def count_cards_with_cmc(cmc)
     matching_cards = @card_array.select { |card_hash| card_hash['cmc'].to_i == cmc }
-    matching_cards.count
+    matching_cards.inject(0) { |sum, card_hash| sum + card_hash[:copies].to_i }
   end
 end
 
@@ -86,5 +86,3 @@ class SetLibrary
     card_array
   end
 end
-
-#App.new(ARGV[0], ARGV[1]).display_mana_curve
